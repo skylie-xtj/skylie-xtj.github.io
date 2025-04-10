@@ -1,6 +1,6 @@
 
 
-[![skylie-xtj](https://img.shields.io/badge/skylie-xtj-github-blue?logo=github)](https://github.com/skylie-xtj)
+[![skylie-xtj](https://img.shields.io/badge/skylie-xtj)](https://github.com/skylie-xtj)
 
 She is currently pursuing a Ph.D.'s Degree in Computer Technology, at School of Computer Science and Technology, Shandong University, China.
 
