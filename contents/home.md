@@ -5,7 +5,7 @@
 She is currently pursuing a Ph.D.'s Degree in Computer Technology, at School of Computer Science and Technology, Shandong University, China.
 
 #### Email
-xutianjiao1998[at]mail.sdu.edu.cn
+xutianjiao1998@mail.sdu.edu.cn
 
 #### Education
 Ph.D., Computer Technology, Shandong University (SDU), 2023—2027 (expected).\
