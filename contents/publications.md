@@ -1,6 +1,6 @@
-- <strong>T. Xu</strong>, A. Chen, Y. Zhao, J. Gao, T. Gan*. A Chinese Multimodal Social Video Dataset for Controversy Detection. _Proceedings of the ACM International Conference on Multimedia (ACM MM)_, 2024. [CCF A]
-
 - <strong>T. Xu</strong>, J. Gao, K. Kong, T. Gan*, J. Yin, L. Nie. Generative Agents for Multimodal Controversy Detection. _Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)_, 2025 [CCF A]
+
+- <strong>T. Xu</strong>, A. Chen, Y. Zhao, J. Gao, T. Gan*. A Chinese Multimodal Social Video Dataset for Controversy Detection. _Proceedings of the ACM International Conference on Multimedia (ACM MM)_, 2024. [CCF A]
 
 - <strong>T. Xu</strong>, S. Chen, Y. Ye, B. Li, H. Guan*. Interval-based Non-dimensionalization Method (IBNM) and Its Application in PM2. 5 Grade Prediction. _Soft Computing_, 2022. [SCI, Q1]
 
