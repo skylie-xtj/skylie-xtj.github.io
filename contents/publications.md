@@ -1,3 +1,5 @@
+- <strong>Tianjiao Xu</strong>, Hao Fu, Suiyang Zhang, Jianhua Yin, Tian Gan*, and Liqiang Nie. Enhancing Democratic Mediation through Norm-Awareness in Generative Agent Societies. _Proceedings of the ACM International Conference on Multimedia (ACM MM)_, 2025.
+
 - <strong>Tianjiao Xu</strong>, Xuebo Liu*, Derek F. Wong*, Yue Zhang, Lidia S. Chao, Min Zhang, Tian Gan. Exploiting Multimodal Knowledge Graph for Multimodal Machine Translation. _IEEE Transactions on Multimedia (TMM)_, 2025.
 
 - <strong>Tianjiao Xu</strong>, Jinfei Gao, Keyi Kong, Tian Gan*, Jianhua Yin, Liqiang Nie. Generative Agents for Multimodal Controversy Detection. _Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI)_, 2025.
