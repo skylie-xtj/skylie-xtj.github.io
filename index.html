@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Tianjiao Xu</title>
-    <link rel="icon" href="img/icon.jpeg" type="image/x-icon">.
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
     <meta name="author" content="Tianjiao Xu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,27 +14,16 @@
             color: #2d3436;
             margin: 0;
             padding: 0;
-            background-color: #f9fafc;
-            background-image: 
-                radial-gradient(#e3f2fd 0.5px, transparent 0.5px),
-                radial-gradient(#e3f2fd 0.5px, #f9fafc 0.5px);
-            background-size: 20px 20px;
-            background-position: 0 0, 10px 10px;
+            background: #ffffff;
             line-height: 1.7;
         }
-        /* 主容器样式：更柔和的阴影和圆角 */
+
         .main-table {
-            width: 950px;
-            border: 0;
-            margin: 40px auto;
-            background-color: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .main-table:hover {
-            transform: translateY(-5px);
+            width: 900px;
+            margin: 28px auto;
+            background-color: transparent;
+            box-shadow: none;
+            border-radius: 0;
         }
         /* 头部名称样式：更活泼的颜色 */
         .header-name {
@@ -383,7 +372,11 @@
             line-height: 1.6;
             margin: 0;
         }
-        
+        .ant-logo {
+            width: 180px;     /* 关键：手动拉宽 */
+            object-fit: contain;
+        }
+                
         /* 装饰性元素 */
         .decor-element {
             position: absolute;
@@ -393,8 +386,6 @@
             border-radius: 50%;
             z-index: -1;
         }
-        .decor-1 { top: 100px; right: 10%; }
-        .decor-2 { bottom: 200px; left: 10%; }
     </style>
     <script type="text/javascript">
         // 新闻展开/收起功能
@@ -431,9 +422,6 @@
     </script>
 </head>
 <body>
-    <!-- 装饰性元素 -->
-    <div class="decor-element decor-1"></div>
-    <div class="decor-element decor-2"></div>
     
     <table class="main-table" border="0" align="center" cellspacing="0" cellpadding="0">
         <!-- 头部：个人信息与联系方式 -->
@@ -571,7 +559,37 @@
                 </table>
             </td>
         </tr>
-
+        <!-- Research Internships -->
+        <tr>
+            <td>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="30">
+                    <tr>
+                        <td width="100%" valign="middle">
+                            <div class="section-heading">
+                                <i class="fas fa-briefcase" style="margin-right: 8px;"></i>
+                                Research Internships
+                            </div>
+                        </td>
+                    </tr>
+        
+                    <tr class="edu-item" style="padding-left: 15px; margin: 0; margin-top: -25px">
+                        <td>
+                            <img src="img/ant.jpg" alt="Ant Group Logo" class="edu-logo ant-logo">
+                        </td>
+                        <td class="edu-content">
+                            <div class="edu-school">Ant Group</div>
+                            <div class="edu-degree">Research Intern</div>
+                            <div class="edu-details">
+                                Oct. 2025 – Mar. 2026<br>
+                                Advised by Researcher <a style="color:#3949ab">Dr. Peng</a><br>
+                                Conducted data quality control to improve foundation model capabilities.
+                            </div>
+                        </td>
+                    </tr>
+        
+                </table>
+            </td>
+        </tr>
         <!-- 发表论文 -->
         <tr>
             <td>
@@ -592,7 +610,7 @@
                                     <div class="paper-authors"><span class="highlight">Tianjiao Xu</span>, Hao Fu, Suiyang Zhang, Jianhua Yin*, Tian Gan*, Liqiang Nie</div>
                                     <div class="paper-venue">ACM MM, 2025 <span class="conference-tag">(CCF A)</span></div>
                                     <div class="paper-links">
-                                        <a href="#"><i class="fas fa-file-pdf"></i> [Paperlink]</a>
+                                        <a href="https://dl.acm.org/doi/10.1145/3746027.3755214"><i class="fas fa-file-pdf"></i> [Paperlink]</a>
                                         <a href="https://github.com/skylie-xtj/NormMediator"><i class="fab fa-github"></i> [Code]</a>
                                     </div>
                                     <div class="paper-desc">Norm Mediat simulates democratic mediation by integrating normative reasoning with dynamic multimodal conflict modeling and norm-aware iterative mediation, offering a comprehensive framework and benchmark dataset for conflict resolution studies.</div>
@@ -703,6 +721,10 @@
                         <td>
                             <ul style="padding-left: 15px; margin: 0; margin-top: -25px">
                                 <li class="award-item">
+                                    <i class="fas fa-star" style="color: #e91e63; margin-right: 5px;"></i>
+                                    National Scholarship, 2025
+                                </li>
+                                <li class="award-item">
                                     <i class="fas fa-plane" style="color: #4caf50; margin-right: 5px;"></i>
                                     SIGMM Student Travel Grant 2024
                                 </li>
@@ -765,9 +787,7 @@
                     <!-- 页脚 -->
                     <tr>
                         <td class="footer">
-                            <i class="far fa-calendar-alt" style="margin-right: 5px;"></i> Last updated: September 2025 
-                            <span style="margin: 0 10px;">|</span> 
-                            <i class="fas fa-code" style="margin-right: 5px;"></i> Designed with <i class="fas fa-heart" style="color: #e91e63;"></i>
+                            <i class="far fa-calendar-alt" style="margin-right: 5px;"></i> Last updated: April 2026 
                         </td>
                     </tr>
                 </table>
