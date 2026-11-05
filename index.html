@@ -48,9 +48,33 @@
         .intro-text {
             font-size: 15px;
             color: #424242;
-            margin: 15px 0;
+            margin: 24px 0 0;
             text-align: left;
-            padding: 0 10px;
+            line-height: 1.85;
+            padding: 0;
+        }
+        .intro-text p {
+            margin: 0;
+        }
+        .intro-text p + p {
+            margin-top: 14px;
+        }
+        .profile-name {
+            margin: 0;
+            text-align: left;
+        }
+        .profile-details .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 22px;
+            margin-top: 20px;
+        }
+        .profile-details .contact-links a {
+            margin: 0;
+        }
+        .intro-text a,
+        .edu-details a {
+            text-decoration: none;
         }
         /* 联系方式链接样式：添加图标和动画 */
         .contact-links {
@@ -144,6 +168,10 @@
         }
         .edu-content {
             flex: 1;
+        }
+        .nus-logo {
+            object-fit: cover;
+            object-position: center;
         }
         .edu-degree {
             font-weight: 600;
@@ -429,14 +457,14 @@
             <td>
                 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="30">
                     <tr>
-                        <td width="70%" valign="middle">
-                            <p align="center">
+                        <td class="profile-details" width="70%" valign="middle" style="padding-right: 15px;">
+                            <p class="profile-name">
                                 <span class="header-name">Tianjiao Xu | 徐天娇</span>
                             </p>
                             <div class="intro-text">
-                                Hi there! Currently, I am a Ph.D. candidate in Computer Technology at the School of Computer Science and Technology, Shandong University, China, advised by <a href="https://faculty.sdu.edu.cn/gantian/zh_CN/index/686151/list/index.htm" style="color:#3949ab">Prof. Tian Gan</a>. My research focuses on <strong>Multimedia Computing</strong>, with particular interests in social computing and risk communication.
+                                <p>Hi there! I am a Ph.D. candidate in Computer Technology at the School of Computer Science and Technology, Shandong University, China, supervised by <a href="https://faculty.sdu.edu.cn/gantian/zh_CN/index/686151/list/index.htm" style="color:#3949ab">Prof. Tian Gan</a>. My research focuses on <strong>Multimedia Computing</strong> and <strong>Social Computing</strong>.</p>
                             </div>
-                            <div class="contact-links" align="center">
+                            <div class="contact-links">
                                 <a href="mailto:xutianjiao1998@mail.sdu.edu.cn"><i class="fas fa-envelope"></i> Email</a>
                                 <a href="https://scholar.google.com/citations?user=8Wmvpy0AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
                                 <a href="https://github.com/skylie-xtj"><i class="fab fa-github"></i> GitHub</a>
@@ -446,7 +474,7 @@
                         <td width="30%" align="center">
                             <img src="img/photo.png" width="250" alt="Tianjiao Xu" style="border-radius: 12px; border: 5px solid #f0f7ff; box-shadow: 0 5px 15px rgba(100, 181, 246, 0.2);">
                             <div style="margin-top: 12px; font-style: italic; font-size: 13px; color: #616161;">
-                                Automn 2024 🍁, Shanghai 
+                                Automn 🍁, Shanghai
                             </div>
                         </td>
                     </tr>
@@ -520,11 +548,27 @@
                             <div class="edu-details">
                                 School of Computer Science and Technology<br>
                                 Sep. 2023 - Jul. 2027<br>
-                                Advisor: <a style="color:#3949ab" href="https://faculty.sdu.edu.cn/gantian/zh_CN/index/686151/list/index.htm">Prof. Tian Gan</a><br>
+                                Supervisor: <a style="color:#3949ab" href="https://faculty.sdu.edu.cn/gantian/zh_CN/index/686151/list/index.htm">Prof. Tian Gan</a><br>
                             </div>
                         </td>
                     </tr>
-                    
+
+                    <!-- 新加坡国立大学海外访学 -->
+                    <tr class="edu-item" style="padding-left: 15px; margin: 0; margin-top: -25px">
+                        <td>
+                            <img src="img/nus.png" alt="National University of Singapore Logo" class="edu-logo nus-logo">
+                        </td>
+                        <td class="edu-content">
+                            <div class="edu-school">National University of Singapore, Singapore</div>
+                            <div class="edu-degree">Visiting Student</div>
+                            <div class="edu-details">
+                                School of Computing<br>
+                                Mar. 2026 – Nov. 2026<br>
+                                Supervisors: <a style="color:#3949ab" href="https://scholar.google.com/citations?user=6Lx_eowAAAAJ&amp;hl=en">Prof. Mohan Kankanhalli</a> and <a style="color:#3949ab" href="https://scholar.google.com/citations?user=Xa0mxggAAAAJ&amp;hl=zh-CN&amp;oi=ao">Dr. Yongkang Wong</a><br>
+                            </div>
+                        </td>
+                    </tr>
+
                     <!-- 澳门大学 -->
                     <tr class="edu-item" style="padding-left: 15px; margin: 0; margin-top: -25px">
                         <td>
@@ -536,7 +580,7 @@
                             <div class="edu-details">
                                 Faculty of Science and Technology<br>
                                 Sep. 2020 - Jul. 2023<br>
-                                Advisor: <a style="color:#3949ab" href="https://www.fst.um.edu.mo/personal/derek-wong/">Prof. Derek F. Wong</a><br>
+                                Supervisor: <a style="color:#3949ab" href="https://www.fst.um.edu.mo/personal/derek-wong/">Prof. Derek F. Wong</a><br>
                             </div>
                         </td>
                     </tr>
@@ -552,7 +596,7 @@
                             <div class="edu-details">
                                 School of Cisco Information Technology<br>
                                 Sep. 2016 - Jul. 2020<br>
-                                Advisor: <a style="color:#3949ab" href="https://sist.gdufs.edu.cn/info/1247/1768.htm">Prof. Shihong Chen</a><br>
+                                Supervisor: <a style="color:#3949ab" href="https://sist.gdufs.edu.cn/info/1247/1768.htm">Prof. Shihong Chen</a><br>
                             </div>
                         </td>
                     </tr>
@@ -581,7 +625,7 @@
                             <div class="edu-degree">Research Intern</div>
                             <div class="edu-details">
                                 Oct. 2025 – Mar. 2026<br>
-                                Advised by Researcher <a style="color:#3949ab" href="https://ha-ha-ha-han.github.io/">Dr. Peng</a><br>
+                                Supervised by Researcher <a style="color:#3949ab" href="https://scholar.google.com/citations?user=kcP6DbAAAAAJ&amp;hl=en">Han Peng</a><br>
                                 Conducted data quality control to improve foundation model capabilities.
                             </div>
                         </td>
@@ -629,7 +673,7 @@
                                     <div class="paper-authors"><span class="highlight">Tianjiao Xu</span>, Jinfei Gao, Keyi Kong, Tian Gan*, Jianhua Yin, Liqiang Nie</div>
                                     <div class="paper-venue">IJCAI, 2025</div>
                                     <div class="paper-links">
-                                        <a href="https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/7716.pdf"><i class="fas fa-file-pdf"></i> [Paperlink]</a>
+                                        <a href="https://www.ijcai.org/proceedings/2025/1107.pdf"><i class="fas fa-file-pdf"></i> [Paperlink]</a>
                                         <a href="https://github.com/skylie-xtj/AgentMCD_Release"><i class="fab fa-github"></i> [Code]</a>
                                     </div>
                                     <div class="paper-desc">AgentMCD leverages LLM-based multi-aspect reasoning and multi-agent simulation to enhance multimodal controversy detection with superior performance and explainability.</div>
@@ -721,8 +765,12 @@
                         <td>
                             <ul style="padding-left: 15px; margin: 0; margin-top: -25px">
                                 <li class="award-item">
+                                    <i class="fas fa-trophy" style="color: #ffc107; margin-right: 5px;"></i>
+                                    Shandong University &quot;Academic Star&quot; Graduate Student Award for Outstanding Achievements (Practical Application Category, <strong>18 people in the whole university</strong>), 2026
+                                </li>
+                                <li class="award-item">
                                     <i class="fas fa-star" style="color: #e91e63; margin-right: 5px;"></i>
-                                    National Scholarship, 2025
+                                    National Scholarship, 2025 <strong>(Top 0.2%)</strong>
                                 </li>
                                 <li class="award-item">
                                     <i class="fas fa-plane" style="color: #4caf50; margin-right: 5px;"></i>
@@ -787,7 +835,7 @@
                     <!-- 页脚 -->
                     <tr>
                         <td class="footer">
-                            <i class="far fa-calendar-alt" style="margin-right: 5px;"></i> Last updated: April 2026 
+                            <i class="far fa-calendar-alt" style="margin-right: 5px;"></i> Last updated: November 2026
                         </td>
                     </tr>
                 </table>
